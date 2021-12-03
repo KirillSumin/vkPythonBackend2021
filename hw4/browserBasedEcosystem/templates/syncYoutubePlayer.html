@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>title</title>
+    <link rel="stylesheet" href="{% static 'style/syncYoutubePlayer.css' %}" type="text/css"/>
+</head>
+<body>
+<div id="player"></div>
+<div class="container">
+    <!--      <div class="manage">-->
+    <!--        <div class="btn settings">Settings</div>-->
+    <!--        <div class="btn exit">Exit</div>-->
+    <!--      </div>-->
+    <div class="btn choose-youtube">Choose video on YouTube</div>
+    <div class="btn return-control">Return to control panel</div>
+<!--    <div class="options">-->
+
+<!--    </div>-->
+</div>
+<script>const video_id = "{{video_id}}";</script>
+<!--константа выше для использования в скрипте ниже, возможный костыль-->
+<script src="{% static 'scripts/syncYoutubePlayer.js' %}"></script>
+</body>
+</html>
