@@ -1,0 +1,25 @@
+{% load static %}
+{% comment %} <a href="{% url "social:begin" "github" %}">GitHub login</a> {% endcomment %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Control your content!</title>
+    <link rel="stylesheet" href="{% static 'style/welcome.css' %}" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="welcome">Welcome to browser based ecosystem!</div>
+    <div class="login">
+        <div class="btn githubAuth">GitHub login</div>
+        <div class="btn baseAuth">Base login</div>
+    </div>
+</div>
+</body>
+<script>const GITHUB_AUTH_URL = "{% url "social:begin" "github" %}";</script>
+<!--константа выше для использования в скрипте ниже, возможный костыль-->
+<script src="{% static 'scripts/welcome.js' %}"></script>
+</html>
+
+
