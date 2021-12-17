@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 40px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  gap: 10px;
+  height: 200px;
+  width: 1080px;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.btn {
+  display: grid;
+  place-items: center;
+}
+
+.btn {
+  background-color: skyblue;
+  border-radius: 10px;
+}
+
+

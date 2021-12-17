@@ -1,0 +1,27 @@
+version: '2.4'
+
+services:
+  nginx:
+    build: nginx/
+    ports:
+      - "8001:80"
+
+  django:
+    build: django/
+    # ports:
+    #   - "8001:8000"
+    env_file: var.env
+
+  db:
+    image: 'postgres'
+    env_file: var.env
+
+  elasticsearch:
+    image: elasticsearch:7.16.1
+    environment:
+      - discovery.type=single-node
+    mem_limit: 1000000000
+  
+  # ubuntu:
+  #   image: "ubuntu:latest"
+
