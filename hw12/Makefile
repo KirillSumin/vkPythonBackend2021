@@ -1,4 +1,5 @@
 build:
+	sudo chmod -R 775 ../
 	sudo docker-compose build
 
 up:build
