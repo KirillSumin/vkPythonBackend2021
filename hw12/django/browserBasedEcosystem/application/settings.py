@@ -23,13 +23,6 @@ try:
         TEST_DB_NAME,
         SOCIAL_AUTH_GITHUB_KEY,
         SOCIAL_AUTH_GITHUB_SECRET,
-        EMAIL_HOST,
-        EMAIL_PORT,
-        EMAIL_USE_TLS,
-        EMAIL_USE_SSL,
-        EMAIL_HOST_USER,
-        EMAIL_HOST_PASSWORD,
-        EMAIL_RECIPIENT_LIST,
     )
 except ImportError:
     print("Not found local_settings.py, exit")
